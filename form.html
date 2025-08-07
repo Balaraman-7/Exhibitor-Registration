@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exhibitor Registration</title>
+    <link rel="icon" href="icon.png">
+</head>
+<body>
+    <p>Exhibitor Registration</p>
+    <br>
+    <div 
+    style="
+    display: grid;
+    grid-template-columns: 740px 50px 350px 100px;"
+    >
+    <form>
+        <div style="margin-left: 350px;">
+        <label class="label-1">
+         Prefix:
+     </label>
+    <input type="text" class="input-1">
+    <br>
+    <br>            
+    <label class="label-2">
+        Name:
+    </label>
+    <input type="text" class="input-2-1" placeholder="Firstname">
+    <input type="text" class="input-2-2" placeholder="Lastname">
+    <br>
+    <br>
+    <label class="label-3">
+        Preferred Pronouns:
+    </label>
+    <input type="text" class="input-3">
+    <br>
+    <br>
+    <label class="label-4">
+        Email:
+    </label>
+    <input type="email" class="input-4" placeholder="sample@example.com">
+    <br>
+    <br>
+    <label class="label-5">
+        Work Phone:
+    </label>
+    <input type="number" class="input-5">
+    <br>
+    <br>
+    <label class="label-6">
+        Cell Phone:
+    </label>
+    <input type="number" class="input-6">
+    <br>
+    <br>
+    <label class="label-7">
+        Job Title:
+    </label>
+    <input type="text" class="input-7">
+    <br>
+    <br>
+    <label class="label-8">
+        Company:
+    </label>
+    <input type="text" class="input-8">
+    <br>
+    <br>
+    <label class="label-9">
+        Full Business Address:
+    </label>
+    <br>
+    <br>
+    <input type="address" class="input-9">
+    <br>
+    <br>
+    <label class="lable-10">
+        Company Website:
+    </label>
+    <br>
+    <br>
+    <input type="text" class="input-10">
+    </form>
+    </div>
+    <div class="vertical-line">
+    </div>
+    <div>
+        <form>
+            <label class="label-11">
+            Company Description:
+        </label>
+        <br>
+        <br>
+        <input type="text" class="input-11">
+        <br>
+        <br>
+        <label class="label-12">
+            Product/Services to exhibit:
+        </label>
+        <br>
+        <br>
+        <input type="text" class="input-12">
+        <br>
+        <br>
+        <label class="label-13">
+            What type of booth do you like?
+        </label>
+        <br>
+        <br>
+        <input type="radio" class="radio-input" name="r">
+        <label class="radio-label">
+            In person booth only
+        </label>
+        <br>
+        <br>
+        <input type="radio" class="radio-input" name="r">
+        <label class="radio-label">
+            Virtual booth only
+        </label>
+        <br>
+        <br>
+        <input type="radio" class="radio-input" name="r">
+        <label class="radio-label">
+            Virtual & In-person booth
+        </label>
+        <br>
+        <br>
+        <label class="lable-14">
+            List your staff(name,email,phone):
+        </label>
+        <br>
+        <br>
+        <input type="text" class="input-14">
+        <br>
+        <br>
+        <label class="lable-15">
+            Competitors you don't want be near:
+        </label>
+        <br>
+        <br>
+        <input type="text" class="input-15">
+        </form>
+    </div>
+    <div>
+        <button onclick="confirmsubmission()">
+            Submit
+        </button>
+    </div>
+    </div>
+</body>
+</html>
+<style>
+p{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input{
+    height: 30px;
+    width: 200px;
+}
+
+label{
+    font-size: 20px;
+}
+
+.label-1{
+    padding-right: 60px;
+}
+
+.label-2{
+    padding-right: 60px;
+}
+
+.input-2-1,.input-2-2{
+    width: 96px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.label-3{
+    padding-right: 28px;
+}
+
+.input-3{
+    width: 130px;
+}
+
+.label-4{
+    padding-right: 65px;
+}
+
+.input-4{
+    text-align: center;
+}
+
+.label-5{
+    padding-right: 15px;
+}
+
+.label-6{
+    padding-right: 26px;
+}
+
+.label-7{
+    padding-right: 45px;
+}
+
+.label-8{
+    padding-right: 38px;
+}
+
+.input-9,.input-10{
+    width: 330px;
+}
+
+.vertical-line{
+    border-left: 2px solid black;
+    height: 620px;
+}
+
+.input-11,.input-12,.input-14,.input-15{
+    width: 340px;
+    height: 49.4px;
+}
+
+.radio-label{
+    font-size: 18px;
+}
+
+.radio-input{
+    height: 14px;
+    width: 14px;
+    margin-left: 50px;
+}
+
+button{
+    margin-left: 120px;
+    margin-top: 280px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:active{
+    margin-top: 283px;
+    margin-left: 123px;
+    box-shadow: none;
+}
+</style>
+<script>
+    function confirmsubmission()
+    {
+        alert("Your form is successfully submitted.");
+    }
+</script>
